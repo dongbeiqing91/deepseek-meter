@@ -1,0 +1,9 @@
+# 构建产物
+.build/
+build/
+
+# 设计迭代存档（含旧命名与桌面截图，不进仓库）
+design/archive/
+
+# 系统文件
+.DS_Store
