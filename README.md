@@ -15,9 +15,12 @@
 ## 运行
 
 ```bash
-./scripts/build_app.sh release        # 产物：build/DeepSeek Meter.app
-open "build/DeepSeek Meter.app"
+./scripts/build_app.sh release                    # 产物：build/DeepSeek Meter.app
+cp -R "build/DeepSeek Meter.app" /Applications/   # 想常驻就装到 /Applications
+open "/Applications/DeepSeek Meter.app"
 ```
+
+> 直接跑 `build/` 里的副本时，Finder 可能缓存了旧的通用图标；装到 `/Applications` 后图标会正常显示。
 
 首次启动会要求粘贴 API Key（只读接口）。没有 Key 时挂件显示 `···`。
 
